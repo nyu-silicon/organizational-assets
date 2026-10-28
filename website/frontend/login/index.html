@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Member login · Next Gen Compute</title>
+  </head>
+  <body>
+    <header>
+      <a href="/">next gen compute</a>
+      <a href="/" data-scramble aria-label="back">[back]</a>
+    </header>
+
+    <main>
+      <h1>member login</h1>
+      <form id="login">
+        <label>
+          email
+          <input name="email" type="email" autocomplete="email" required autofocus />
+        </label>
+        <label>
+          password
+          <input name="password" type="password" autocomplete="current-password" required />
+        </label>
+        <button type="submit" data-scramble aria-label="sign in">[sign in]</button>
+        <p id="error" role="alert"></p>
+      </form>
+    </main>
+
+    <script type="module" src="/src/login.js"></script>
+  </body>
+</html>
