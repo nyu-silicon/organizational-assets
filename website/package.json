@@ -1,0 +1,20 @@
+{
+  "name": "next-gen-compute",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Website for the Next Gen Compute club",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently -n web,api -c cyan,magenta \"npm run dev -w frontend\" \"npm run dev -w backend\"",
+    "dev:frontend": "npm run dev -w frontend",
+    "dev:backend": "npm run dev -w backend",
+    "build": "npm run build -w frontend",
+    "start": "npm run start -w backend"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}
