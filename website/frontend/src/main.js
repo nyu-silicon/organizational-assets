@@ -1,4 +1,5 @@
 import "./style.css";
+import "./scramble.js";
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
@@ -7,7 +8,6 @@ fetch("/api/health")
   .then((res) => (res.ok ? res.json() : Promise.reject()))
   .then((data) => {
     status.textContent = `api: ${data.status}`;
-    status.classList.add("ok");
   })
   .catch(() => {
     status.textContent = "api: offline";

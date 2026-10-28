@@ -6,7 +6,8 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "node --watch src/index.js",
-    "start": "NODE_ENV=production node src/index.js"
+    "start": "NODE_ENV=production node src/index.js",
+    "add-member": "node scripts/add-member.js"
   },
   "dependencies": {
     "express": "^5.3.0"

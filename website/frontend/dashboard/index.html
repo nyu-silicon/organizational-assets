@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Dashboard · Next Gen Compute</title>
+  </head>
+  <body>
+    <header>
+      <a href="/">next gen compute</a>
+      <a href="/" id="logout" data-scramble aria-label="log out">[log out]</a>
+    </header>
+
+    <main hidden>
+      <p>hello, <span id="name"></span>.</p>
+
+      <h2>account</h2>
+      <ul>
+        <li>email: <span id="email"></span></li>
+        <li>joined: <span id="joined"></span></li>
+      </ul>
+
+      <h2>announcements</h2>
+      <ul id="announcements"></ul>
+    </main>
+
+    <script type="module" src="/src/dashboard.js"></script>
+  </body>
+</html>
